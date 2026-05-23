@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Curriculum</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar__brand">Math Curriculum</a>
+    <ul class="navbar__nav">
+      <li><a href="k12.html">K-12</a></li>
+      <li><a href="undergraduate.html">Undergraduate</a></li>
+      <li><a href="graduate.html">Graduate</a></li>
+    </ul>
+    <div class="navbar__actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <main class="page-wrapper">
+    <section class="hero">
+      <h1>Plan Your <span>Math</span> Education</h1>
+      <p>Browse default curriculum tracks for every level, then customize them to fit your goals.</p>
+    </section>
+
+    <div class="level-cards">
+
+      <a href="k12.html" class="level-card">
+        <div class="level-card__icon">📐</div>
+        <div class="level-card__title">K-12</div>
+        <div class="level-card__desc">Kindergarten through 12th grade — from number sense to pre-calculus and beyond.</div>
+        <div class="level-card__tracks">3 tracks: Regular · 1 Year Advanced · 2 Years Advanced</div>
+        <div class="level-card__cta">Explore →</div>
+      </a>
+
+      <a href="undergraduate.html" class="level-card">
+        <div class="level-card__icon">🎓</div>
+        <div class="level-card__title">Undergraduate</div>
+        <div class="level-card__desc">College-level mathematics — proof-based courses through senior electives and capstone.</div>
+        <div class="level-card__tracks">2 tracks: 4-Year Plan · 3-Year Plan</div>
+        <div class="level-card__cta">Explore →</div>
+      </a>
+
+      <a href="graduate.html" class="level-card">
+        <div class="level-card__icon">🔬</div>
+        <div class="level-card__title">Graduate</div>
+        <div class="level-card__desc">Research-focused programs across the major areas of advanced mathematics.</div>
+        <div class="level-card__tracks">4 tracks: Algebra · Analysis · Applied · Probability</div>
+        <div class="level-card__cta">Explore →</div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Math Curriculum — customize your path through mathematics.</p>
+  </footer>
+
+  <script type="module">
+    import { initTheme } from './js/theme.js';
+    initTheme();
+    // Mark active nav link
+    document.querySelectorAll('.navbar__nav a').forEach(a => {
+      if (a.getAttribute('href') === 'index.html') a.classList.add('active');
+    });
+  </script>
+</body>
+</html>

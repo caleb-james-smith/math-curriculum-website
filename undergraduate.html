@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undergraduate Curriculum — Math Curriculum</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar__brand">Math Curriculum</a>
+    <ul class="navbar__nav">
+      <li><a href="k12.html">K-12</a></li>
+      <li><a href="undergraduate.html" class="active">Undergraduate</a></li>
+      <li><a href="graduate.html">Graduate</a></li>
+    </ul>
+    <div class="navbar__actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <main class="page-wrapper">
+    <div class="page-header">
+      <h1>Undergraduate Mathematics</h1>
+      <p>Select a plan, then customize the course list to match your institution or interests.</p>
+    </div>
+
+    <div class="track-section">
+      <div class="track-tabs" role="tablist" aria-label="Undergraduate tracks">
+        <button class="track-tab active" role="tab" data-track-id="4year">4-Year Plan</button>
+        <button class="track-tab" role="tab" data-track-id="3year">3-Year Plan</button>
+      </div>
+      <p id="track-description" class="track-description"></p>
+    </div>
+
+    <div class="course-toolbar">
+      <button id="add-course-btn" class="btn btn-primary">+ Add Course</button>
+      <button id="reset-btn" class="btn btn-ghost">↺ Reset to Default</button>
+    </div>
+
+    <div id="course-list" class="course-list"></div>
+  </main>
+
+  <footer>
+    <p>Math Curriculum — customize your path through mathematics.</p>
+  </footer>
+
+  <!-- Add Course Modal -->
+  <div id="add-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <h2 id="modal-title">Add Course</h2>
+      <form id="add-course-form" novalidate>
+        <div class="form-group">
+          <label for="course-name-input">Course Name <span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="course-name-input"
+            name="name"
+            placeholder="e.g. Number Theory"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-group">
+          <label for="course-desc-input">Description (optional)</label>
+          <textarea
+            id="course-desc-input"
+            name="description"
+            placeholder="A short description of what this course covers."
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="button" id="modal-cancel" class="btn btn-ghost">Cancel</button>
+          <button type="submit" class="btn btn-primary">Add Course</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initTheme } from './js/theme.js';
+    import { initCurriculum } from './js/curriculum.js';
+    import { undergradTracks } from './js/data.js';
+    initTheme();
+    initCurriculum('undergrad', undergradTracks, '4year');
+  </script>
+</body>
+</html>
