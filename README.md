@@ -12,17 +12,17 @@ A static curriculum planning website for K–12, undergraduate, and graduate mat
 
 ## Running Locally
 
-No build step required. Open `index.html` directly in your browser, or serve it with any static server:
+No build step required. Serve the website with a static server and specify the port number (here, we are using port 8000):
 
 ```bash
 # Python
-python -m http.server 8000
+python3 -m http.server 8000
 
 # Node (npx)
-npx serve .
+npx serve -l 8000
 ```
 
-Then visit `http://localhost:8000`.
+Then visit http://localhost:8000.
 
 ## Deploying to GitHub Pages
 
