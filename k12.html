@@ -40,7 +40,7 @@
       <button id="reset-btn" class="btn btn-ghost">↺ Reset to Default</button>
     </div>
 
-    <div id="course-list" class="course-list"></div>
+    <div id="course-list"></div>
   </main>
 
   <footer>
@@ -71,6 +71,10 @@
             placeholder="A short description of what this course covers."
             rows="3"
           ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="course-group-select">Grade Level</label>
+          <select id="course-group-select" name="group"></select>
         </div>
         <div class="form-actions">
           <button type="button" id="modal-cancel" class="btn btn-ghost">Cancel</button>
