@@ -18,6 +18,7 @@ export const k12Tracks = {
         subtitle: 'Grades 6–8',
         courses: [
           { id: 'k12-r-3', name: 'Ratios & Proportional Reasoning', description: 'Ratios, rates, unit rates, and proportional relationships across real-world contexts.' },
+          { id: 'k12-r-10', name: 'Expressions & Equations', description: 'Algebraic expressions, single-variable equations and inequalities, and basic properties of operations.' },
           { id: 'k12-r-4', name: 'Pre-Algebra', description: 'Introduction to variables, expressions, equations, and the coordinate plane.' },
         ],
       },
@@ -54,9 +55,9 @@ export const k12Tracks = {
         label: 'Middle School',
         subtitle: 'Grades 6–8',
         courses: [
-          { id: 'k12-a1-3', name: 'Pre-Algebra', description: 'Variables, expressions, equations, and the coordinate plane — completed one year early.' },
-          { id: 'k12-a1-4', name: 'Algebra I', description: 'Linear equations, inequalities, systems, and functions — taken in 7th grade.' },
-          { id: 'k12-a1-5', name: 'Geometry', description: 'Euclidean geometry, congruence, similarity, area, volume, and trigonometry.' },
+          { id: 'k12-a1-10', name: 'Expressions & Equations', description: 'Algebraic expressions, single-variable equations and inequalities, and basic properties of operations.' },
+          { id: 'k12-a1-3',  name: 'Pre-Algebra', description: 'Variables, expressions, equations, and the coordinate plane — completed one year early.' },
+          { id: 'k12-a1-4',  name: 'Algebra I', description: 'Linear equations, inequalities, systems, and functions — taken in 8th grade.' },
         ],
       },
       {
@@ -64,6 +65,7 @@ export const k12Tracks = {
         label: 'High School',
         subtitle: 'Grades 9–12',
         courses: [
+          { id: 'k12-a1-5', name: 'Geometry', description: 'Euclidean geometry, congruence, similarity, area, volume, and trigonometry.' },
           { id: 'k12-a1-6', name: 'Algebra II', description: 'Polynomials, rational and exponential functions, logarithms, and conic sections.' },
           { id: 'k12-a1-7', name: 'Pre-Calculus', description: 'Trigonometric functions, sequences and series, limits, and analytic geometry.' },
           { id: 'k12-a1-8', name: 'AP Calculus AB', description: 'Differential and integral calculus of single-variable functions at the AP level.' },
@@ -75,7 +77,7 @@ export const k12Tracks = {
 
   advanced2: {
     label: '2 Years Advanced',
-    description: 'Further accelerated track, starting algebra in 6th grade. Reaches Multivariable Calculus or Linear Algebra by senior year.',
+    description: 'Further accelerated track, starting pre-algebra in 6th grade. Reaches Multivariable Calculus or Linear Algebra by senior year.',
     groups: [
       {
         id: 'g-elem',
@@ -90,9 +92,9 @@ export const k12Tracks = {
         label: 'Middle School',
         subtitle: 'Grades 6–8',
         courses: [
-          { id: 'k12-a2-2', name: 'Algebra I', description: 'Linear equations, inequalities, systems, and functions — taken in 6th grade.' },
-          { id: 'k12-a2-3', name: 'Geometry', description: 'Euclidean geometry, congruence, similarity, area, volume, and trigonometry.' },
-          { id: 'k12-a2-4', name: 'Algebra II', description: 'Polynomials, rational and exponential functions, logarithms, and conic sections.' },
+          { id: 'k12-a2-10', name: 'Pre-Algebra', description: 'Introduction to variables, expressions, equations, and the coordinate plane — completed in 6th grade.' },
+          { id: 'k12-a2-2',  name: 'Algebra I', description: 'Linear equations, inequalities, systems, and functions — taken in 7th grade.' },
+          { id: 'k12-a2-3',  name: 'Geometry', description: 'Euclidean geometry, congruence, similarity, area, volume, and trigonometry — taken in 8th grade.' },
         ],
       },
       {
@@ -100,6 +102,7 @@ export const k12Tracks = {
         label: 'High School',
         subtitle: 'Grades 9–12',
         courses: [
+          { id: 'k12-a2-4', name: 'Algebra II', description: 'Polynomials, rational and exponential functions, logarithms, and conic sections.' },
           { id: 'k12-a2-5', name: 'Pre-Calculus', description: 'Trigonometric functions, sequences, series, limits, and analytic geometry.' },
           { id: 'k12-a2-6', name: 'AP Calculus AB', description: 'Differential and integral calculus of single-variable functions at the AP level.' },
           { id: 'k12-a2-7', name: 'AP Calculus BC', description: 'Further integration techniques, infinite series, parametric and polar curves at the AP level.' },
