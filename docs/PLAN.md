@@ -28,7 +28,34 @@
 - [x] `undergraduate.html` — Undergraduate page with 2 tracks
 - [x] `graduate.html` — Graduate page with 4 tracks
 
-## Phase 5 — Polish & Accessibility
+## Phase 5 — Grade/Year Groups
+
+Courses are now organized into named groups (grade bands for K-12, years for undergrad/grad).
+Users can move courses between groups as well as reorder within a group.
+
+### Data model change (`js/data.js`)
+- [ ] Replace flat `courses` array on each track with a `groups` array
+- [ ] Each group has: `id`, `label`, `subtitle`, `courses[]`
+- [ ] Assign all existing courses to their correct group per track:
+  - K-12 groups: Elementary School (K–5) · Middle School (6–8) · High School (9–12)
+  - Undergrad 4-Year groups: Year 1 · Year 2 · Year 3 · Year 4
+  - Undergrad 3-Year groups: Year 1 · Year 2 · Year 3
+  - Graduate groups: Year 1 (Core) · Year 2 (Advanced) · Year 3+ (Research)
+
+### Rendering change (`js/curriculum.js`)
+- [ ] Render a labeled section header per group (`<h3>` + subtitle)
+- [ ] Each section has its own `.course-list` with draggable cards
+- [ ] Cards carry `data-group-id` and `data-index` attributes
+- [ ] Drag-drop: reorder within a group (existing) + move between groups (new)
+- [ ] "Add Course" modal gains a Group selector dropdown
+- [ ] localStorage value changes from flat array to array of group objects
+
+### Style change (`css/style.css`)
+- [ ] Group section header style (label + subtitle, visually separated from cards)
+- [ ] Visual distinction between group sections (spacing, optional divider)
+- [ ] Drag-over highlight works at the group level when dragging between sections
+
+## Phase 6 — Polish & Accessibility
 - [ ] Keyboard navigation for drag-drop (move up/down buttons as fallback)
 - [ ] ARIA labels on interactive elements
 - [ ] Focus management in modal

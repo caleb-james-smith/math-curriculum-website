@@ -37,23 +37,58 @@ Toggle writes `data-theme` attribute and saves choice to `localStorage` key `the
 | `--color-text-muted` | `#5a6a8a` | `#8b949e` |
 | `--color-border` | `#d0daea` | `#30363d` |
 
+## Data Model
+
+Courses are organized into **groups** (grade bands for K-12, years for undergrad/grad).
+Each track has a `groups` array; each group has its own `courses` array.
+
+```js
+// Track shape
+{
+  label: string,
+  description: string,
+  groups: GroupObject[]
+}
+
+// Group shape
+{
+  id: string,        // stable, used as key (e.g. "k12-r-g-elem")
+  label: string,     // e.g. "Elementary School" | "Year 1"
+  subtitle: string,  // e.g. "Grades K–5" | "entering year"
+  courses: CourseObject[]
+}
+
+// Course shape
+{
+  id: string,        // stable; crypto.randomUUID() for user-added courses
+  name: string,
+  description: string
+}
+```
+
+**Group labels by page:**
+- K-12: Elementary School (Grades K–5), Middle School (Grades 6–8), High School (Grades 9–12)
+- Undergraduate 4-Year: Year 1 – Year 4
+- Undergraduate 3-Year: Year 1 – Year 3
+- Graduate: Year 1 (Core Coursework), Year 2 (Advanced Coursework), Year 3+ (Research)
+
 ## localStorage Schema
 - Theme: key `theme`, value `"light"` or `"dark"`
-- Curriculum: key `curriculum-{page}-{trackId}`, value JSON array of course objects
+- Curriculum: key `curriculum-{page}-{trackId}`, value JSON array of **group objects** (full structure)
 
 Page identifiers: `k12`, `undergrad`, `grad`
 Track identifiers: `regular`, `advanced1`, `advanced2`, `4year`, `3year`,
 `algebra`, `analysis`, `applied`, `probability`
 
-## Course Object Shape
-```js
-{ id: string, name: string, description: string }
-```
-`id` is stable (used as key); generated as `crypto.randomUUID()` for user-added courses.
-
 ## Drag-and-Drop
-HTML5 native API (`draggable="true"`). Events on `.course-list` container via delegation.
-After drop: reorder in-memory array → re-render → save to localStorage.
+HTML5 native API (`draggable="true"`). Supports two operations:
+- **Within a group** — reorder courses inside the same grade/year section
+- **Between groups** — move a course from one grade/year to another
+
+Each card carries `data-group-id` and `data-index`. Drop handler reads both to determine
+the source and destination group. After any drop: update in-memory groups array → re-render → save to localStorage.
+
+Groups themselves are fixed in order (grade/year order is always meaningful).
 
 ## docs/
 - `docs/PLAN.md` — phased development roadmap
