@@ -72,6 +72,8 @@ Track
 | `advanced1` | 1 Year Advanced | Accelerated; reaches AP Calculus AB by senior year |
 | `advanced2` | 2 Years Advanced | Further accelerated; reaches Multivariable Calculus or Linear Algebra by senior year |
 
+> **Constraint:** Every K-12 track must contain exactly **three courses** in its Middle School group — one per grade level (Grades 6, 7, and 8). This constraint applies to all tracks and must be maintained when adding new default tracks or editing existing ones.
+
 **Default groups & courses — Regular**
 
 *Elementary School (Grades K–5)*
@@ -80,14 +82,15 @@ Track
 
 *Middle School (Grades 6–8)*
 3. Ratios & Proportional Reasoning — Ratios, rates, unit rates, and proportional relationships across real-world contexts.
-4. Pre-Algebra — Introduction to variables, expressions, equations, and the coordinate plane.
+4. Expressions & Equations — Algebraic expressions, single-variable equations and inequalities, and basic properties of operations.
+5. Pre-Algebra — Introduction to variables, expressions, equations, and the coordinate plane.
 
 *High School (Grades 9–12)*
-5. Algebra I — Linear equations and inequalities, systems of equations, and an introduction to functions.
-6. Geometry — Euclidean geometry, congruence, similarity, area, volume, and basic trigonometry.
-7. Algebra II — Polynomials, rational functions, exponentials, logarithms, and conic sections.
-8. Pre-Calculus — Trigonometric functions, sequences and series, and limits as preparation for calculus.
-9. Statistics & Probability — Descriptive statistics, probability theory, and an introduction to statistical inference.
+6. Algebra I — Linear equations and inequalities, systems of equations, and an introduction to functions.
+7. Geometry — Euclidean geometry, congruence, similarity, area, volume, and basic trigonometry.
+8. Algebra II — Polynomials, rational functions, exponentials, logarithms, and conic sections.
+9. Pre-Calculus — Trigonometric functions, sequences and series, and limits as preparation for calculus.
+10. Statistics & Probability — Descriptive statistics, probability theory, and an introduction to statistical inference.
 
 ---
 
@@ -98,15 +101,16 @@ Track
 2. Fractions, Decimals & Ratios — Unified treatment of fractions, decimals, ratios, and proportional reasoning — completed at an accelerated pace.
 
 *Middle School (Grades 6–8)*
-3. Pre-Algebra — Variables, expressions, equations, and the coordinate plane — completed one year early.
-4. Algebra I — Linear equations, inequalities, systems, and functions — taken in 7th grade.
-5. Geometry — Euclidean geometry, congruence, similarity, area, volume, and trigonometry.
+3. Expressions & Equations — Algebraic expressions, single-variable equations and inequalities, and basic properties of operations.
+4. Pre-Algebra — Variables, expressions, equations, and the coordinate plane — completed one year early.
+5. Algebra I — Linear equations, inequalities, systems, and functions — taken in 8th grade.
 
 *High School (Grades 9–12)*
-6. Algebra II — Polynomials, rational and exponential functions, logarithms, and conic sections.
-7. Pre-Calculus — Trigonometric functions, sequences and series, limits, and analytic geometry.
-8. AP Calculus AB — Differential and integral calculus of single-variable functions at the AP level.
-9. Statistics & Probability — Descriptive statistics, probability theory, and statistical inference (AP Statistics or equivalent).
+6. Geometry — Euclidean geometry, congruence, similarity, area, volume, and trigonometry.
+7. Algebra II — Polynomials, rational and exponential functions, logarithms, and conic sections.
+8. Pre-Calculus — Trigonometric functions, sequences and series, limits, and analytic geometry.
+9. AP Calculus AB — Differential and integral calculus of single-variable functions at the AP level.
+10. Statistics & Probability — Descriptive statistics, probability theory, and statistical inference (AP Statistics or equivalent).
 
 ---
 
@@ -116,16 +120,17 @@ Track
 1. Number Sense & Early Algebra — Arithmetic, fractions, ratios, and introduction to variables — completed at an accelerated pace in elementary school.
 
 *Middle School (Grades 6–8)*
-2. Algebra I — Linear equations, inequalities, systems, and functions — taken in 6th grade.
-3. Geometry — Euclidean geometry, congruence, similarity, area, volume, and trigonometry.
-4. Algebra II — Polynomials, rational and exponential functions, logarithms, and conic sections.
+2. Pre-Algebra — Introduction to variables, expressions, equations, and the coordinate plane — completed in 6th grade.
+3. Algebra I — Linear equations, inequalities, systems, and functions — taken in 7th grade.
+4. Geometry — Euclidean geometry, congruence, similarity, area, volume, and trigonometry — taken in 8th grade.
 
 *High School (Grades 9–12)*
-5. Pre-Calculus — Trigonometric functions, sequences, series, limits, and analytic geometry.
-6. AP Calculus AB — Differential and integral calculus of single-variable functions at the AP level.
-7. AP Calculus BC — Further integration techniques, infinite series, parametric and polar curves at the AP level.
-8. Linear Algebra — Vectors, matrices, linear transformations, determinants, eigenvalues, and eigenvectors.
-9. Multivariable Calculus — Partial derivatives, multiple integrals, line and surface integrals, and vector calculus theorems.
+5. Algebra II — Polynomials, rational and exponential functions, logarithms, and conic sections.
+6. Pre-Calculus — Trigonometric functions, sequences, series, limits, and analytic geometry.
+7. AP Calculus AB — Differential and integral calculus of single-variable functions at the AP level.
+8. AP Calculus BC — Further integration techniques, infinite series, parametric and polar curves at the AP level.
+9. Linear Algebra — Vectors, matrices, linear transformations, determinants, eigenvalues, and eigenvectors.
+10. Multivariable Calculus — Partial derivatives, multiple integrals, line and surface integrals, and vector calculus theorems.
 
 ---
 

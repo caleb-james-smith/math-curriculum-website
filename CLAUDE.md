@@ -68,6 +68,7 @@ Each track has a `groups` array; each group has its own `courses` array.
 
 **Group labels by page:**
 - K-12: Elementary School (Grades K–5), Middle School (Grades 6–8), High School (Grades 9–12)
+  - **Constraint:** Every K-12 track must have exactly 3 courses in Middle School (one per grade, Grades 6–8).
 - Undergraduate 4-Year: Year 1 – Year 4
 - Undergraduate 3-Year: Year 1 – Year 3
 - Graduate: Year 1 (Core Coursework), Year 2 (Advanced Coursework), Year 3+ (Research)
